@@ -1759,12 +1759,18 @@ section {
 @media(max-width:768px){
   .mobile-video{
     display:block;
-    width: 100%;
+    width: 130%;
     height:auto;
     object-fit: contain;
     position: absolute;
-    left:0;
+    left:50%;
     top:50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-50%);
+  }
+  .hero-video{
+    filter:blur(8px);
+  }
+  .hero{
+    height:70vh;
   }
 }
