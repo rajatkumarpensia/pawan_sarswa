@@ -1755,3 +1755,16 @@ section {
 .d-none{
   display: none !important;
 }
+.mobile-video{display:none;}
+@media(max-width:768px){
+  .mobile-video{
+    display:block;
+    width: 100%;
+    height:auto;
+    object-fit: contain;
+    position: absolute;
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+  }
+}
